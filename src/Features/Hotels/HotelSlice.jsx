@@ -50,7 +50,7 @@ const HotelSlice = createSlice({
     },
     deleteHotels: (state, action) => {
       state.hotels = state.hotels.filter((hotel) => {
-        return hotel.id === action.payload;
+        return hotel.id !== action.payload;
       });
     },
   },
