@@ -60,6 +60,5 @@ export const selectAllHotels = (state) => state.hotels.hotels;
 
 export const { addHotels, editHotels, deleteHotels } = HotelSlice.actions;
 
-export const selectPostByRating = (state, rating) =>
-  state.hotels.hotels.find((hotel) => hotel.rating === rating);
+
 export default HotelSlice.reducer;
